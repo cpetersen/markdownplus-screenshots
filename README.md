@@ -1,4 +1,4 @@
-# Markdownplus::Screenshots
+# Markdownplus::Webshots
 
 TODO: Write a gem description
 
@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'markdownplus-screenshots'
+    gem 'markdownplus-webshots'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install markdownplus-screenshots
+    $ gem install markdownplus-webshots
 
 ## Usage
 

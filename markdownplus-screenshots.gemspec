@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'markdownplus/screenshots/version'
+require 'markdownplus/webshots/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "markdownplus-screenshots"
-  spec.version       = Markdownplus::Screenshots::VERSION
+  spec.name          = "markdownplus-webshots"
+  spec.version       = Markdownplus::Webshots::VERSION
   spec.authors       = ["Christopher Petersen"]
   spec.email         = ["chris@petersen.io"]
-  spec.description   = %q{Adds screenshot capabilities to markdownplus}
-  spec.summary       = %q{Adds screenshot capabilities to markdownplus}
+  spec.description   = %q{Webshots plugin for Markdownplus}
+  spec.summary       = %q{Adds webshot capabilities to markdownplus}
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -1,15 +1,15 @@
-require "markdownplus/screenshots/version"
+require "markdownplus/webshots/version"
 
 require "markdownplus"
 require "uuid"
 require "webshot"
 
 module Markdownplus
-  module Screenshots
-    class ScreenshotsHandler < Handler
+  module Webshots
+    class WebshotsHandler < Handler
       def execute(input, parameters, warnings, errors)
         output = nil
-        warnings << "Screenshots handler ignores input" if(input!=nil && !input.strip.empty?)
+        warnings << "Webshots handler ignores input" if(input!=nil && !input.strip.empty?)
         if parameters==nil
           errors << "No url given"
         elsif parameters.count == 0
@@ -18,7 +18,7 @@ module Markdownplus
           url = parameters.first
           filename = "#{UUID.generate}.png"
           begin
-            ScreenshotsHandler.webshot.capture url, filename
+            WebshotsHandler.webshot.capture url, filename
             output = "![#{url}](#{filename})"
           rescue => e
             errors << "Error opening [#{url}] [#{filename}] [#{e.message}]"
@@ -28,9 +28,9 @@ module Markdownplus
       end
 
       def self.webshot
-        @@webshot ||= Webshot::Screenshot.instance
+        @@webshot ||= Webshot::Webshot.instance
       end
     end
-    HandlerRegistry.register("screenshot", ScreenshotsHandler)
+    HandlerRegistry.register("webshot", WebshotsHandler)
   end
 end
