@@ -28,7 +28,7 @@ module Markdownplus
       end
 
       def self.webshot
-        @@webshot ||= Webshot::Webshot.instance
+        @@webshot ||= Webshot::Screenshot.instance
       end
     end
     HandlerRegistry.register("webshot", WebshotsHandler)
