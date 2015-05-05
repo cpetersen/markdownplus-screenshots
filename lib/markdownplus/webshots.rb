@@ -7,7 +7,7 @@ require "webshot"
 module Markdownplus
   module Webshots
     class WebshotsHandler < Handler
-      def execute(input, parameters, warnings, errors)
+      def execute(input, parameters, variables, warnings, errors)
         output = nil
         warnings << "Webshots handler ignores input" if(input!=nil && !input.strip.empty?)
         if parameters==nil
