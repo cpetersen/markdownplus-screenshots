@@ -1,6 +1,6 @@
 # Markdownplus::Webshots
 
-TODO: Write a gem description
+[Webshot](https://github.com/vitalie/webshot) plugin for [Markdownplus](https://github.com/cpetersen/markdownplus). Allows for dynamically updatable screenshots of webpages, directly from markdown.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The following embeds a screen shot of google.com into the current markdown file.
+
+```
+  ```webshot("http://www.google.com")
+```
 
 ## Contributing
 
